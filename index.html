@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration System</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Registration System</h1>
+    </header>
+
+    <main>
+
+        <!-- Registration Form -->
+        <section class="form-card">
+
+            <form>
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname">
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password">
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age">
+                </div>
+
+                <!-- Birth Date -->
+                <div class="form-group">
+                    <label for="birthdate">Birth Date:</label>
+                    <input
+                        type="date"
+                        id="birthdate"
+                        name="birthdate">
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label>Gender:</label>
+
+                    <div class="options">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Male"
+                                required>
+                            Male
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Female"
+                                required>
+                            Female
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Course -->
+                <div class="form-group">
+                    <label for="course">Course:</label>
+
+                    <select
+                        id="course"
+                        name="course"
+                        required>
+
+                        <option value="">-- Select Course --</option>
+                        <option value="BSIT">BSIT</option>
+                        <option value="CAS">CAS</option>
+                        <option value="BEED">BEED</option>
+                        <option value="BSHM">BSHM</option>
+
+                    </select>
+                </div>
+
+                <!-- Skills -->
+                <div class="form-group">
+                    <label>Skills:</label>
+
+                    <div class="options">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skills"
+                                value="Leadership">
+                            Leadership
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skills"
+                                value="Time Management">
+                            Time Management
+                        </label>
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="skills"
+                                value="Programming">
+                            Programming
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">Address:</label>
+
+                    <textarea
+                        id="address"
+                        name="address"></textarea>
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons">
+
+                    <button
+                        type="submit"
+                        id="registerBtn">
+                        Register
+                    </button>
+
+                    <button
+                        type="reset"
+                        id="clearBtn">
+                        Clear
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- Separator -->
+        <hr>
+
+
+        <!-- Student Records -->
+        <section class="table-card">
+
+            <h2>Student Records</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Full Name</th>
+                            <th>Course</th>
+                            <th>Year Level</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>001</td>
+                            <td>Alexa Therese Prahinog</td>
+                            <td>BSIT</td>
+                            <td>2nd Year</td>
+                            <td>prahinogalexa36@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>John Cruz</td>
+                            <td>CAS</td>
+                            <td>2nd Year</td>
+                            <td>john@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>Maria Santos</td>
+                            <td>BEED</td>
+                            <td>1st Year</td>
+                            <td>maria@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>004</td>
+                            <td>Mark Reyes</td>
+                            <td>BSHM</td>
+                            <td>2nd Year</td>
+                            <td>mark@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>005</td>
+                            <td>Anna Garcia</td>
+                            <td>BSIT</td>
+                            <td>2nd Year</td>
+                            <td>anna@gmail.com</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
